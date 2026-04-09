@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Stremio Downloader
+Comment=Download videos from Stremio for offline viewing
+Exec=bash -c 'cd "$(dirname "%k")" && bash START.sh'
+Terminal=true
+Type=Application
+Categories=AudioVideo;Network;Video;

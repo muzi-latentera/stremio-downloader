@@ -1,0 +1,14 @@
+#!/bin/bash
+# AppRun - Entry point for the Stremio Downloader AppImage
+SELF=$(readlink -f "$0")
+HERE=${SELF%/*}
+
+# Add bundled binaries to PATH
+export PATH="$HERE/bin:$PATH"
+
+# Set ffmpeg path for fluent-ffmpeg
+export FFMPEG_PATH="$HERE/bin/ffmpeg"
+export FFPROBE_PATH="$HERE/bin/ffprobe"
+
+# Run the server
+exec "$HERE/bin/node" "$HERE/app/server-standalone.js" "$@"

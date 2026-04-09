@@ -1,0 +1,12 @@
+[Unit]
+Description=Stremio Downloader - Download videos for offline viewing
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/stremio-downloader
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

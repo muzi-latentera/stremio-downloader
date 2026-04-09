@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Stremio Downloader
+Comment=Download videos from Stremio for offline viewing
+Exec=stremio-downloader
+Icon=stremio-downloader
+Type=Application
+Categories=AudioVideo;Network;Video;
+Keywords=stremio;download;video;offline;
